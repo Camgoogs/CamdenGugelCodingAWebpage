@@ -4,21 +4,21 @@ Stylesheet for codingAWebpageAssignment index.html
 */
 
 a.button {
-  background-color: #196774;
-  color: #EF6024;
+  background-color: #EF6024;
+  color: #196774;
   text-decoration: none;
   font-size: 1.5em;
   text-align: center;
   display: inline-block;
   padding-left: 15px;
   padding-right: 15px;
-  font-family: "Alan Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   border-radius: 5px;
 }
 
 a.button:hover {
-  color: #363432;
-  background-color: #EF6024;
+  color: #EF6024;
+  background-color: #1970AA;
 }
 
 .center {
@@ -27,7 +27,11 @@ a.button:hover {
   align-items: center;
 }
 
-/* Color Theme Swatches in Hex */
+h2 {
+  font-family: "PT Serif", serif;
+}
+
+/* Color Theme Swatches in Hex for reference*/
 .Colliding-Power-1-hex { color: #363432; }
 .Colliding-Power-2-hex { color: #196774; }
 .Colliding-Power-3-hex { color: #90A19D; }
@@ -64,7 +68,7 @@ body {
   margin: 0;
   background-color: #90A19D;
   line-height: 1.6;
-  font-family: "Alan Sans", sans-serif;
+
 }
 
 .hero-section {
@@ -77,43 +81,60 @@ body {
 .hero-section h1 {
   color: #F0941F;
   margin-bottom: 10px;
+  font-family: "PT Serif", serif;
 }
 
 .hero-section h3 {
   color: #FFFFFF;
   max-width: 800px;
   margin: 0 auto 20px auto;
+  font-family: "Alan Sans", sans-serif;
 }
 
 .intro-section {
   background-color: #F9F9F9;
   color: #363432;
   padding: 60px 20%;
-
+  font-family: "Alan Sans", sans-serif;
 }
 
 .info-section {
   background-color: #90A19D;
   color: #363432;
   padding: 60px 20%;
+  font-family: "Alan Sans", sans-serif;
 }
 
 .category-section {
   background-color: #F4F1EE;
   padding: 60px 20%;
+  font-family: "Alan Sans", sans-serif;
 }
 
 .tips-section {
   background-color: #196774;
   color: #FFFFFF;
   padding: 60px 20%;
+  font-family: "Alan Sans", sans-serif;
+}
+
+.tips-section h3 {
+  color: #F4F1EE;
+}
+
+.examples-section {
+  background-color: #F4F1EE;
+  color: #363432;
+  padding: 60px 20%;
+  font-family: "Alan Sans", sans-serif;
 }
 
 .learn-section {
-  background-color: #EF6024;
-  color: #FFFFFF;
+  background-color: #90A19D;
+  color: #363432;
   padding: 60px 20%;
   text-align: center;
+  font-family: "Alan Sans", sans-serif;
 }
 
 .footer-section {
@@ -121,7 +142,24 @@ body {
   color: #F4F1EE;
   text-align: center;
   padding: 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Alan Sans", sans-serif;
+}
+
+.three-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.pull-quote {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+  color: #363432;
+  margin-top: 130px;
+  margin-bottom: 10px;
 }
 
 /* --- Text & Layout Enhancements --- */
@@ -143,7 +181,7 @@ section h2 {
 
 .text-image img {
   width: 45%;
-  max-width: 400px;
+  max-width: 600px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
@@ -155,6 +193,26 @@ section h2 {
 
 .text-image.reverse {
   flex-direction: row-reverse;
+}
+
+.image-block {
+  width: 45%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.image-block img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: block;
+}
+
+.image-block p {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #666;
+  font-style: italic;
 }
 
 /* --- Buttons --- */
@@ -173,5 +231,15 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: #EF6024;
+  color: #1970AA;
+}
+
+.blue-background-link {
+  color: #EF6024; /* normal color */
+  text-decoration: underline; /* optional */
+  transition: color 0.3s ease; /* smooth fade effect */
+}
+
+.blue-background-link:hover {
+  color: #1970AA; /* hover color */
 }
